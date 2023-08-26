@@ -11,7 +11,7 @@ function Card(props) {
         color="#333"
       />
       <View style={styles.infos}>
-          <Text style={styles.nomeCategoria}>{props.categoria.nome}</Text>
+        <Text style={styles.nomeCategoria}>{props.categoria.nome}</Text>
       </View>
     </View>
   );
@@ -46,9 +46,11 @@ export default function Nav() {
     <View style={styles.nav}>
       <Pesquisa />
       <View style={styles.categorias}>
-        {categorias.map((categoria) => (
-          <Card key={categoria.nome} categoria={categoria} />
-        ))}
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+          {categorias.map((categoria) => (
+            <Card key={categoria.nome} categoria={categoria} />
+          ))}
+        </TouchableOpacity>
       </View>
     </View>
   );

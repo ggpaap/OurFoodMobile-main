@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from "react-native";
 
-export default function Home({  }) {
+export default function Carrinho() {
   return (
     <View style={styles.body}>
       <Text>olá mundo</Text>

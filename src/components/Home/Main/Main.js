@@ -11,23 +11,23 @@ export default class Main extends Component {
     const combos = [
       {
         id: 1,
-        nomeProduto: "Mega combo Ourfood",
+        nomeProduto: "Mega combo Ourfoodq",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 2,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 3,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
     ];
@@ -36,21 +36,21 @@ export default class Main extends Component {
         id: 1,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 2,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 3,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
     ];
@@ -59,21 +59,21 @@ export default class Main extends Component {
         id: 1,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 2,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 3,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
     ];
@@ -82,21 +82,21 @@ export default class Main extends Component {
         id: 1,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 2,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
         id: 3,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/images.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
     ];
@@ -134,20 +134,6 @@ export default class Main extends Component {
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
               <Text style={styles.TextH2}>Lanches</Text>
-              <View
-                style={{ flexDirection: "row", alignItems: "center", gap: 7 }}
-              >
-                <MaterialCommunityIcons
-                  name="arrow-right-bold-box"
-                  size={20}
-                  color="#FF842B"
-                />
-                <Text
-                  style={{ color: "#FF842B", fontSize: 15, fontWeight: "600" }}
-                >
-                  Ver todos
-                </Text>
-              </View>
             </View>
             <ScrollView horizontal={true}>
               {lanches.map((lanche) => (
@@ -160,20 +146,6 @@ export default class Main extends Component {
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
               <Text style={styles.TextH2}>Bebidas</Text>
-              <View
-                style={{ flexDirection: "row", alignItems: "center", gap: 7 }}
-              >
-                <MaterialCommunityIcons
-                  name="arrow-right-bold-box"
-                  size={20}
-                  color="#FF842B"
-                />
-                <Text
-                  style={{ color: "#FF842B", fontSize: 15, fontWeight: "600" }}
-                >
-                  Ver todos
-                </Text>
-              </View>
             </View>
             <ScrollView horizontal={true}>
               {bebidas.map((bebida) => (
@@ -186,20 +158,6 @@ export default class Main extends Component {
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
               <Text style={styles.TextH2}>Sobremesas</Text>
-              <View
-                style={{ flexDirection: "row", alignItems: "center", gap: 7 }}
-              >
-                <MaterialCommunityIcons
-                  name="arrow-right-bold-box"
-                  size={20}
-                  color="#FF842B"
-                />
-                <Text
-                  style={{ color: "#FF842B", fontSize: 15, fontWeight: "600" }}
-                >
-                  Ver todos
-                </Text>
-              </View>
             </View>
             <ScrollView horizontal={true}>
               {sobremesas.map((sobremesa) => (
