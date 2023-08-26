@@ -1,25 +1,25 @@
-import { StyleSheet, View, Text } from "react-native";
+import Home from "./src/pages/Home/index";
+import Carrinho from "./src/pages/Carrinho/index";
 import Header from "./src/components/Header/Header";
-import { ScrollView } from "react-native";
-import Main from "./src/components/Main/Main";
-import Nav from "./src/components/Nav/Nav";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+export default function app() {
   return (
-    <View style={styles.body}>
-      <Header />
-      <ScrollView>
-        <Nav />
-        <Main />
-      </ScrollView>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          header: () => <Header />,
+        }}
+      >
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen
+          name="Carrinho"
+          component={Carrinho}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  body: {
-    marginTop: 35,
-    backgroundColor: "#F7F7F7",
-    flex: 1,
-  },
-});

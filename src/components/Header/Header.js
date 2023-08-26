@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import styles from "./style";
 
-export default function Header(props) {
+export default function Header({ navigation }) {
   return (
     <View style={styles.header}>
       <View style={styles.headerPrincipal}>
@@ -11,10 +11,19 @@ export default function Header(props) {
         <View style={styles.icones}>
           <View style={{ flexDirection: "row", gap: 10 }}>
             <Text style={styles.carrinhoText}>0</Text>
-            <View style={styles.btnCart}>
-              <MaterialCommunityIcons name="cart-outline" size={20} color="#FF842B" />
-            </View>
-            <Image style={{width: 40, height: 40, borderRadius: 10}} source={require("../../../assets/img/rafa.jpeg")} />
+            <TouchableOpacity style={styles.btnCart} onPress={() => navigation.navigate('Carrinho')}>
+              <MaterialCommunityIcons
+                name="cart-outline"
+                size={20}
+                color="#FF842B"
+              />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Perfil')}>
+              <Image
+                style={{ width: 40, height: 40, borderRadius: 10 }}
+                source={require("../../../assets/img/rafa.jpeg")}
+              />
+            </TouchableOpacity>
           </View>
         </View>
       </View>
