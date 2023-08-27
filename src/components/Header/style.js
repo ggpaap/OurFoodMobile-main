@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 15,
     flexDirection: "column",
+    marginTop: 20,
     backgroundColor: "#fff",
   },
   headerPrincipal: {

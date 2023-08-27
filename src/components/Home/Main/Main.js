@@ -6,6 +6,7 @@ import CardSobremesa from "../Card/CardSobremesa/Card";
 import CardBebida from "../Card/CardBebida/Card";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import styles from "./style";
+
 export default class Main extends Component {
   render() {
     const combos = [

@@ -15,7 +15,7 @@ export default function app() {
           header: CustomHeader,
         }}
       >
-        <Stack.Screen name="Home" component={Home} />a
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Carrinho" component={Carrinho} />
       </Stack.Navigator>
     </NavigationContainer>

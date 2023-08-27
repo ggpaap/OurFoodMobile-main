@@ -1,4 +1,4 @@
-import { View, TextInput, Text } from "react-native";
+import { View, TextInput, Text, TouchableOpacity } from "react-native";
 import styles from "./style";
 import { MaterialCommunityIcons, AntDesign } from "@expo/vector-icons";
 
@@ -46,11 +46,9 @@ export default function Nav() {
     <View style={styles.nav}>
       <Pesquisa />
       <View style={styles.categorias}>
-        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
           {categorias.map((categoria) => (
             <Card key={categoria.nome} categoria={categoria} />
           ))}
-        </TouchableOpacity>
       </View>
     </View>
   );
