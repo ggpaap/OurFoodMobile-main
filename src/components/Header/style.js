@@ -4,8 +4,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 15,
     flexDirection: "column",
-    marginTop: 20,
+    marginTop: 30,
     backgroundColor: "#fff",
+    elevation: 2,
+    shadowColor: '#000', 
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.2,
+    padding: 15,
   },
   headerPrincipal: {
     flexDirection: "row",

@@ -1,9 +1,12 @@
-import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { ScrollView } from "react-native";
 import Main from "../../components/Carrinho/Main/Main";
 import styles from "./style";
+import { useNavigation } from "@react-navigation/native";
 
 function ValorTotal() {
+  const navigation = useNavigation();
+  
   return (
     <View
       style={styles.ValorContainer}
@@ -25,13 +28,13 @@ function ValorTotal() {
           <Text style={styles.valor}>R$59,04</Text>
         </View>
       </View>
-      <TouchableOpacity >
+      <TouchableOpacity onPress={() => navigation.navigate("Pagamento")}>
         <Text style={{color: "white", fontSize: 16, padding: 10, textAlign: "center", fontWeight: "600", borderRadius: 10, marginTop: 20,backgroundColor: "#FF842B"}}>Prosseguir</Text>
       </TouchableOpacity>
     </View>
   );
 }
-export default function Home() {
+export default function Carrinho() {
   return (
     <View style={styles.body}>
       <ScrollView>

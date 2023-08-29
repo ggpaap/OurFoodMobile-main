@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from "react-native";
 export default function Home({  }) {
   return (
     <View style={styles.body}>
-      <Text>vtnc piranhaaaaaaaaaaaaaaaaaaa</Text>
+      <Text> </Text>
     </View>
   );
 }

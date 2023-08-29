@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   ValorContainer: {
-    elevation: 5, // para Android (cria uma sombra)
-    shadowColor: '#000', // para iOS (cor da sombra)
+    elevation: 5,
+    shadowColor: '#000', 
     shadowOffset: {
       width: 0,
       height: 2,
