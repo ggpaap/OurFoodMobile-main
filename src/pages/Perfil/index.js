@@ -1,34 +1,43 @@
-import { StyleSheet, View, Text, Image } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 function MenuCard(props) {
+  const navigation = useNavigation();
+
   return (
-    <View
-      style={{
-        backgroundColor: "#fff",
-        borderRadius: 10,
-        padding: 20,
-        flexDirection: "row",
-        justifyContent: "space-between",
-      }}
-    >
-      <Text style={{ color: "#444" }}>{props.opcao}</Text>
-      <FontAwesome name="arrow-right" size={19} color="#FF842B" />
-    </View>
+    <TouchableOpacity onPress={() => navigation.navigate(props.rota)}>
+      <View
+        style={{
+          backgroundColor: "#fff",
+          borderRadius: 10,
+          padding: 20,
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}
+      >
+        <Text style={{ color: "#444" }}>{props.opcao}</Text>
+        <FontAwesome name="arrow-right" size={19} color="#FF842B" />
+      </View>
+    </TouchableOpacity>
   );
 }
-export default function Perfil({  }) {
+export default function Perfil({}) {
   return (
     <View style={styles.body}>
       <View>
-        <Text style={{ fontWeight: "bold", fontSize: 25, color: "#FF842B" }}>Olá RafaAlbano!</Text>
-        <Text style={{ fontWeight: "500", fontSize: 16, color: "#333" }}>Aqui estão mais informações para você</Text>
+        <Text style={{ fontWeight: "bold", fontSize: 25, color: "#FF842B" }}>
+          Olá RafaAlbano!
+        </Text>
+        <Text style={{ fontWeight: "500", fontSize: 16, color: "#333" }}>
+          Aqui estão mais informações para você
+        </Text>
       </View>
-      <View style={{gap: 10, marginTop: 20}}>
-        <MenuCard opcao="Favoritos" />
-        <MenuCard opcao="Pedidos" />
-        <MenuCard opcao="Pagamentos" />
-        <MenuCard opcao="Endereços" />
+      <View style={{ gap: 10, marginTop: 20 }}>
+        <MenuCard opcao="Favoritos" rota="Favoritos"/>
+        <MenuCard opcao="Pedidos" rota="Pedidos" />
+        <MenuCard opcao="Pagamentos" rota="Pagamentos"/>
+        <MenuCard opcao="Endereços" rota="Enderecos"/>
       </View>
     </View>
   );

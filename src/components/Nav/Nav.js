@@ -1,32 +1,38 @@
 import { View, TextInput, Text, TouchableOpacity } from "react-native";
 import styles from "./style";
 import { MaterialCommunityIcons, AntDesign } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 function Card(props) {
+  const navigation = useNavigation();
   return (
-    <View style={styles.card}>
-      <MaterialCommunityIcons
-        name={props.categoria.icon}
-        size={24}
-        color="#333"
-      />
-      <View style={styles.infos}>
-        <Text style={styles.nomeCategoria}>{props.categoria.nome}</Text>
+    <TouchableOpacity onPress={() => navigation.navigate(props.categoria.nome)}>
+      <View style={styles.card}>
+        <MaterialCommunityIcons
+          name={props.categoria.icon}
+          size={24}
+          color="#333"
+        />
+        <View style={styles.infos}>
+          <Text style={styles.nomeCategoria}>{props.categoria.nome}</Text>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 function Pesquisa() {
+  const navigation = useNavigation();
   return (
     <View style={styles.pesquisaView}>
       <TextInput style={styles.input} placeholder="Pesquisa" />
-      <View style={styles.btnSearch}>
-        <AntDesign name="search1" size={20} color="white" />
-      </View>
+      <TouchableOpacity onPress={() => navigation.navigate("Pesquisa")}>
+        <View style={styles.btnSearch}>
+          <AntDesign name="search1" size={20} color="white" />
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }
-
 export default function Nav() {
   const categorias = [
     {
@@ -46,9 +52,9 @@ export default function Nav() {
     <View style={styles.nav}>
       <Pesquisa />
       <View style={styles.categorias}>
-          {categorias.map((categoria) => (
-            <Card key={categoria.nome} categoria={categoria} />
-          ))}
+        {categorias.map((categoria) => (
+          <Card key={categoria.nome} categoria={categoria} />
+        ))}
       </View>
     </View>
   );

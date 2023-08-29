@@ -2,7 +2,6 @@ import { StyleSheet, View } from "react-native";
 import { ScrollView } from "react-native";
 import Main from "../../components/Home/Main/Main";
 import Nav from "../../../src/components/Nav/Nav";
-import Header from "../../../src/components/Header/Header";
 
 export default function Home() {
   return (
