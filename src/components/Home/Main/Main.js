@@ -104,7 +104,7 @@ export default class Main extends Component {
     return (
       <View style={styles.main}>
         <View>
-          <View style={styles.produtosOfertas}>
+          <View style={styles.categorias}>
             <View
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
@@ -130,7 +130,7 @@ export default class Main extends Component {
               ))}
             </ScrollView>
           </View>
-          <View style={styles.produtosOfertas}>
+          <View style={styles.categorias}>
             <View
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
@@ -142,7 +142,7 @@ export default class Main extends Component {
               ))}
             </ScrollView>
           </View>
-          <View style={styles.produtosOfertas}>
+          <View style={styles.categorias}>
             <View
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >
@@ -154,7 +154,7 @@ export default class Main extends Component {
               ))}
             </ScrollView>
           </View>
-          <View style={styles.produtosOfertas}>
+          <View style={styles.categorias}>
             <View
               style={{ flexDirection: "row", justifyContent: "space-between" }}
             >

@@ -1,4 +1,5 @@
 import Home from "./src/pages/Home/index";
+import Perfil from "./src/pages/Perfil/index";
 import Header from "./src/components/Header/Header";
 import Carrinho from "./src/pages/Carrinho/index";
 import Pagamento from "./src/pages/Pagamento/index";
@@ -25,6 +26,7 @@ export default function app() {
         <Stack.Screen name="PIX" component={Pix} />
         <Stack.Screen name="Dinheiro" component={Dinheiro} />
         <Stack.Screen name="Cartao" component={Cartao} />
+        <Stack.Screen name="Perfil" component={Perfil} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -15,10 +15,10 @@ export default class Card extends Component {
         </View>
         <Image
           source={this.props.bebida.caminhoImagem}
-          style={styles.fotoCategoria}
+          style={styles.foto}
         />
         <View style={styles.infos}>
-          <Text style={styles.nomeCategoria}>
+          <Text style={styles.nomeProduto}>
             {this.props.bebida.nomeProduto}
           </Text>
           <View
@@ -29,7 +29,7 @@ export default class Card extends Component {
             }}
           >
             <Text style={{ color: "#FF842B" }}>R$</Text>
-            <Text style={styles.nomeCategoria}>{this.props.bebida.valor}</Text>
+            <Text style={styles.nomeProduto}>{this.props.bebida.valor}</Text>
           </View>
         </View>
       </View>

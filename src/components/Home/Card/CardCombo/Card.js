@@ -12,7 +12,7 @@ export default class Card extends Component {
         <View style={styles.btn}>
           <MaterialCommunityIcons name="cart-plus" size={20} color="white" />  
         </View>
-        <Image source={this.props.combo.caminhoImagem} style={styles.fotoProduto} />
+        <Image source={this.props.combo.caminhoImagem} style={styles.foto} />
         <View style={styles.infos}>
           <Text style={styles.nomeProduto}>{this.props.combo.nomeProduto}</Text>
           <Text style={{color: "#777", fontSize: 14, textAlign: "center"}}>{this.props.combo.descricaoProduto}</Text>

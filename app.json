@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mercadinho",
-    "slug": "mercadinho",
+    "name": "ourfood",
+    "slug": "ourfood",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
