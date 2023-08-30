@@ -11,14 +11,14 @@ export default class Main extends Component {
         id: 1,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/xburguerduplo.jpeg"),
         descricaoProduto: "Três hamburgueres, queijo, bacon, cheddar, tomate, cebola e milho",
       },
       {
         id: 2,
         nomeProduto: "Mega combo Ourfood",
         valor: 30,
-        caminhoImagem: require("../../../../assets/img/images.jpeg"),
+        caminhoImagem: require("../../../../assets/img/xsalada.jpeg"),
         descricaoProduto: "Beef Burger, batata frita e refrigerante",
       },
       {
