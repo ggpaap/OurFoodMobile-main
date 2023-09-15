@@ -1,4 +1,4 @@
-import { View, ScrollView, TouchableOpacity } from "react-native";
+import { View, ScrollView, TouchableOpacity, Image } from "react-native";
 import CardCombo from "../Card/CardCombo/Card";
 import React, { Component } from "react";
 import CardLanche from "../Card/CardLanche/Card";
@@ -40,6 +40,13 @@ export default function Main({}) {
       {produtos.map((produto) => (
         <List.Item key={produto.id} title={produto.titulo} />
       ))}
+      {produtos.map((produto) => (
+  <Image
+    key={produto.id}
+    source={{ uri: produto.capa.file }} 
+    style={{ width: 100, height: 100 }}
+  />
+))}
       <Button title="Atualizar" icon="reload" mode="elevated" onPress={() => updateProdutos()} />
       <StatusBar style="auto" />
     </View>
