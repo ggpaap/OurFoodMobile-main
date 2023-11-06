@@ -25,7 +25,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
 
 export default function app() {
-  const CustomHeader = () => <Header />;
+  const CustomHeader = () => Header;
   return (
     <NavigationContainer>
       <Stack.Navigator

@@ -41,7 +41,7 @@ export default function Main({}) {
 
   return (
     <View style={styles.container}>
-      <h2>Lanches: </h2>
+      <Text>Lanches: </Text>
 
       <View style={{ display: "flex", flexDirection: "row" }}>
         {produtos.map((produto) => (
